@@ -1,0 +1,13 @@
+#!/bin/bash
+
+file="$(find /home/ubuntu/ -type f -name "error.sh" | ls -s error.sh | awk '{print $1}')"
+size="100"
+
+        if [ "$file" -lt "$size" ]
+        then
+                echo "create a new file"
+                touch /home/ubuntu/file2 
+                cat error.sh > /home/ubuntu/file2
+        else 
+                echo "not required"
+        fi

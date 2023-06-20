@@ -8,6 +8,7 @@ size="100"
                 echo "create a new file"
                 touch /home/ubuntu/file2 
                 cat error.sh > /home/ubuntu/file2
+                echo "" > error.sh
         else 
                 echo "not required"
         fi
